@@ -102,7 +102,9 @@ const HomeSection = () => {
       {/* Header */}
       <div style={{ marginBottom: '24px' }}>
         <h1 style={{ fontSize: 'clamp(20px, 5vw, 28px)', fontWeight: '700', color: '#111827', display: 'flex', alignItems: 'center', marginBottom: '6px', flexWrap: 'wrap', gap: '8px' }}>
-          <FaCookie style={{ color: '#FF7F50' }} />
+          {/* <FaCookie style={{ color: '#FF7F50' }} /> */}
+          {/* <Fa style={{ color: '#FF7F50' }} /> */}
+
           Welcome, {user?.name || 'Customer'}!
         </h1>
         <p style={{ color: '#6B7280', fontSize: 'clamp(14px, 3vw, 16px)' }}>Browse our delicious cookie collection</p>
