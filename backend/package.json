@@ -1,0 +1,10 @@
+{
+  "name": "cookie-store-management-system",
+  "version": "1.0.0",
+  "description": "Cookie Store Management System - Backend API",
+  "scripts": {
+    "start": "mvn spring-boot:run",
+    "build": "mvn clean package",
+    "test": "mvn test"
+  }
+}
