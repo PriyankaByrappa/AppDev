@@ -717,7 +717,7 @@ const AdminDashboard = () => {
               <FaBars style={{ fontSize: '18px' }} />
             </button>
           )}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{
               width: '40px',
               height: '40px',
@@ -731,8 +731,9 @@ const AdminDashboard = () => {
               color: '#fff',
               boxShadow: '0 4px 12px rgba(255, 140, 66, 0.3)'
             }}>
-              🍪
-            </div>
+              // 🍪
+            </div> */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{ display: window.innerWidth > 640 ? 'block' : 'none' }}>
               <h2 style={{ 
                 background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
@@ -744,7 +745,7 @@ const AdminDashboard = () => {
                 fontSize: '20px',
                 letterSpacing: '-0.5px'
               }}>
-                Cookie Store Admin
+                CookieHub
               </h2>
               <div style={{ 
                 fontSize: '12px', 
@@ -756,7 +757,8 @@ const AdminDashboard = () => {
               </div>
             </div>
           </div>
-          
+          <br></br>
+          <br></br>
           {/* Breadcrumb */}
           <div style={{ 
             display: 'flex', 
