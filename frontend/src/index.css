@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Dark theme input placeholder styling */
+.dark-input::placeholder {
+  color: #9ca3af !important;
+}
+
+.dark-input::-webkit-input-placeholder {
+  color: #9ca3af !important;
+}
+
+.dark-input::-moz-placeholder {
+  color: #9ca3af !important;
+}
+
+.dark-input:-ms-input-placeholder {
+  color: #9ca3af !important;
+}
+
+/* Admin Dashboard Grid Responsive Design */
+@media (max-width: 1200px) {
+  .admin-cookie-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-cookie-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Enhanced Navbar Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Navbar Enhancements */
+.navbar-enhanced {
+  animation: slideInFromTop 0.5s ease-out;
+}
+
+/* Search Input Focus Effects */
+.search-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+/* Notification Badge Animation */
+.notification-badge {
+  animation: pulse 2s infinite;
+}
+
+/* Profile Hover Effects */
+.profile-section:hover .profile-arrow {
+  transform: rotate(180deg);
+}
